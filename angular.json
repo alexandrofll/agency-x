@@ -119,6 +119,31 @@
           }
         }
       }
+    },
+    "home-feature": {
+      "projectType": "library",
+      "root": "libs/home/feature",
+      "sourceRoot": "libs/home/feature/src",
+      "prefix": "agency-x",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/home/feature"],
+          "options": {
+            "jestConfig": "libs/home/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/home/feature/src/**/*.ts",
+              "libs/home/feature/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
