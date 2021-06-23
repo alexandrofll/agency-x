@@ -15,12 +15,10 @@ import { RouterModule } from '@angular/router';
           loadChildren: () =>
             import('@agency-x/home/feature').then(
               module => module.HomeFeatureModule
-            )
- 
+            ) 
         }
       ],
-      { initialNavigation: 'enabled'}
- 
+      { initialNavigation: 'enabled'} 
     )    
   ],
   providers: [],
